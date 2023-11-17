@@ -1,0 +1,296 @@
+:root {
+    --blue: rgb(31, 14, 211);
+
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    mix-blend-mode: normal;
+}
+
+.main {
+    background-image: url(./IMG/Bonvoyage.png);
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    color: white;
+    position: relative;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 7, 2, 0.048)
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+header {
+    display: flex;
+    padding: 2rem;
+}
+
+header button {
+    width: 5rem;
+    border-radius: 5px;
+    background-color: rgba(236, 104, 44, 1);
+    color: white;
+    border: solid rgba(236, 104, 44, 1);
+}
+
+#logo {
+    font-family: 'Peralta';
+    flex: 3;
+    font-size: 30px;
+    font-weight: 200px;
+}
+
+nav {
+    flex: 4;
+    display: flex;
+}
+
+nav a {
+    flex: 2;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+.postertext {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.line1 {
+
+    color: var(--blue);
+    font-size: 1.9em;
+    font-weight: bolder;
+}
+
+.line2 {
+    Font-weight: bolder;
+}
+
+.postertext div {
+    margin-top: 0.2rem;
+}
+
+.postertext button {
+    width: 7rem;
+    margin-top: 1.6rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: rgba(49, 35, 199, 0.425);
+    color: white;
+
+}
+
+.header1 {
+    width: 270px;
+    height: 34px;
+    margin-top: 1004px;
+    left: 579px;
+
+}
+
+.heading1 {
+    text-align: center;
+}
+
+.category {
+    color: var(--blue);
+    margin-top: 2rem;
+    font-weight: bold;
+    height: 34px;
+}
+
+.weoffer {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.services {
+    padding: 20px 20px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+.weather {
+    width: 20%;
+    height: 50px;
+    padding: 50px 20px;
+    float: left;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.flights {
+    width: 20%;
+    height: 50px;
+    padding: 50px 20px;
+    float: left;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.events {
+    width: 20%;
+    height: 50px;
+    padding: 50px 20px;
+    float: left;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.customization {
+    width: 20%;
+    height: 50px;
+    padding: 50px 20px;
+    float: left;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.weather div {
+    height: auto;
+    margin-top: 10%;
+    font-size: smaller;
+    font-weight: 30;
+}
+
+.flights div {
+    margin-top: 10%;
+    font-size: smaller;
+    font-weight: 30;
+}
+
+.events div {
+    margin-top: 10%;
+    font-size: smaller;
+    font-weight: 30;
+}
+
+.customization div {
+    margin-top: 10%;
+    font-size: smaller;
+    font-weight: 30;
+}
+
+.heading2 {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.selling {
+    text-align: center;
+    color: var(--blue);
+    margin-top: 30%;
+    font-weight: bold;
+    height: 34px;
+}
+
+.destinations {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+/* _________________________________________ */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    padding: 16px;
+    text-align: center;
+    /* background-color: #f1f1f1; */
+  }
+
+
+
+
+
+/* Images----------- */
+
+.image-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next row if the screen is narrow */
+    justify-content: space-between; /* Adjust this for card spacing */
+}
+
+.image-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+}
+
+.image-card .card-content {
+    padding: 15px;
+}
+
+.image-card h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.image-card p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+
